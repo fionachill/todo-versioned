@@ -20,7 +20,7 @@ public class Dashboard extends Controller
     Todo todo = new Todo(title);
     member.todolist.add(todo);
     member.save();
-    Logger.info("Adding Todo" + title);
+    Logger.info("Adding Todo " + title);
     redirect("/dashboard");
   }
 
